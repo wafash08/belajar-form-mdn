@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic controls: Task 2</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- SPECS: -->
+    <!-- 1. Turn the first <fieldset>'s contents into a set of radio buttons — you should only be able to select one pony character at once -->
+    <!-- 2. Make it so that the first radio button is selected upon page load -->
+    <!-- 3. Turn the second <fieldset>'s content into a set of checkboxes -->
+    <!-- 4. Add a couple more hotdog choices of your own -->
+
+    <form>
+      <fieldset>
+        <legend>Who is your favorite pony?</legend>
+        <ul>
+          <li>
+            <label for="pinkie">Pinkie Pie</label>
+            <input type="radio" name="pony" id="pinkie" checked />
+          </li>
+          <li>
+            <label for="rainbow">Rainbow Dash</label>
+            <input type="radio" name="pony" id="rainbow" />
+          </li>
+          <li>
+            <label for="twilight">Twilight Sparkle</label>
+            <input type="radio" name="pony" id="twilight" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Hotdog preferences</legend>
+        <ul>
+          <li>
+            <label for="vegan">Vegan</label>
+            <input type="checkbox" name="hotdog" id="vegan" />
+          </li>
+          <li>
+            <label for="onions">Onions</label>
+            <input type="checkbox" name="hotdog" id="onions" />
+          </li>
+        </ul>
+      </fieldset>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
